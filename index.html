@@ -1,0 +1,263 @@
+<section id="tentang" className="about-section">
+  <div className="about-container">
+    
+    <div className="about-header">
+      <div className="subtitle-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="icon-monochrome"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        <span className="subtitle">WHO I AM</span>
+      </div>
+      <h2 className="title">Tentang <span className="text-highlight">Saya</span></h2>
+      <div className="title-line"></div>
+    </div>
+
+    <div className="about-grid">
+      <div className="about-left">
+        <p className="desc-text">
+          Profesional berpengalaman di bidang administrasi operasional, pengendalian persediaan, dan pengelolaan data. Terampil dalam pencatatan transaksi, monitoring stok, penyusunan laporan, serta memastikan akurasi data sesuai prosedur perusahaan.
+        </p>
+        <p className="desc-text text-spacer">
+          Berkomitmen mendukung efisiensi operasional melalui pengelolaan data yang akurat serta memiliki motivasi tinggi untuk berkembang di bidang keuangan, controlling, dan administrasi bisnis.
+        </p>
+
+        <div className="traits-list">
+          <div className="trait-item">
+            <div className="trait-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+            </div>
+            <span className="trait-label">Berorientasi pada Detail</span>
+          </div>
+          <div className="trait-item">
+            <div className="trait-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+            </div>
+            <span className="trait-label">Selalu Berkomitmen untuk Berkembang</span>
+          </div>
+          <div className="trait-item">
+            <div className="trait-icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <span className="trait-label">Terorganisir & Teliti</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="about-right">
+        <div className="stats-grid">
+          <div className="stats-card">
+            <div className="stats-value">7+</div>
+            <div className="stats-label">Tahun Pengalaman</div>
+          </div>
+          <div className="stats-card">
+            <div className="stats-value">5</div>
+            <div className="stats-label">Perusahaan</div>
+          </div>
+          <div className="stats-card">
+            <div className="stats-value">3.68</div>
+            <div className="stats-label">IPK</div>
+          </div>
+        </div>
+
+        <div className="photo-wrapper">
+          <img 
+            src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100117668/fc19a8ca-7c38-40.jpeg" 
+            alt="Arlo Arlando" 
+            className="profile-img"
+          />
+          <div className="photo-overlay"></div>
+          <div className="photo-caption">
+            <p className="caption-title">Lulusan Terbaik 2023</p>
+            <p className="caption-subtitle">Program Studi Peternakan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  :root {
+    --bg-dark: #0a0a0a;
+    --surface-dark: #121212;
+    --border-color: #262626;
+    --text-primary: #ffffff;
+    --text-muted: #a3a3a3;
+  }
+
+  .about-section {
+    position: relative;
+    padding: 6rem 1rem;
+    background-color: var(--surface-dark);
+    color: var(--text-primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+  }
+
+  .about-container {
+    position: relative;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .about-header {
+    margin-bottom: 4rem;
+  }
+
+  .subtitle-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .icon-monochrome {
+    color: var(--text-primary);
+  }
+
+  .subtitle {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--text-primary);
+  }
+
+  .title {
+    font-size: 2.25rem;
+    font-weight: 900;
+    margin: 0;
+  }
+
+  .text-highlight {
+    color: #e5e5e5;
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .title-line {
+    margin-top: 1rem;
+    height: 1px;
+    width: 6rem;
+    background: linear-gradient(to right, #ffffff, transparent);
+  }
+
+  .about-grid {
+    display: grid;
+    gap: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    .about-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .desc-text {
+    font-size: 1rem;
+    line-height: 1.625;
+    color: var(--text-muted);
+    margin: 0;
+  }
+
+  .text-spacer {
+    margin-top: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .traits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .trait-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .trait-icon-wrapper {
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+  }
+
+  .trait-label {
+    font-size: 0.875rem;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .stats-card {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  .stats-value {
+    font-size: 1.875rem;
+    font-weight: 900;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+  }
+
+  .stats-label {
+    font-size: 0.625rem;
+    color: var(--text-muted);
+    line-height: 1.25;
+  }
+
+  .photo-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 1px solid var(--border-color);
+  }
+
+  .profile-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    filter: grayscale(100%); /* Membuat foto otomatis hitam putih ala Ekizr */
+  }
+
+  .photo-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, var(--surface-dark) 0%, transparent 60%);
+  }
+
+  .photo-caption {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+  }
+
+  .caption-title {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin: 0;
+  }
+
+  .caption-subtitle {
+    font-size: 0.625rem;
+    color: var(--text-muted);
+    margin: 0;
+  }
+</style>
